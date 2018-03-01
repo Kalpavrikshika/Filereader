@@ -9,22 +9,29 @@
 > Reads a file
 
 ```python
-print (f.read())
+read_all(filename)
 ```
 
-> Rewind a file 
+> Rewind a file
 
 ```python
-print (f.seek(0))
-``` 
-
->Print a line 
-
-```python
-def print_a_line(line_count, f.readline()):
+rewind(filename, line_number):
 ```
 
+> Print a line
 
 ```python
-count_line = 1
+get_line(filename)
+```
+
+### Usage 
+ 
+ ```python 
+ from read_line_py3 import Filereader
+ 
+freader_object = Filereader()
+
+input_file = "stuff.txt"
+
+current_file = open(input_file,"r") 
 ```
